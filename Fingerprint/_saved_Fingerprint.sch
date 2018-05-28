@@ -1,0 +1,370 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:arduino
+LIBS:_saved_Fingerprint-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L +5V #PWR01
+U 1 1 5AEB7602
+P 4000 1500
+F 0 "#PWR01" H 4000 1350 50  0001 C CNN
+F 1 "+5V" H 4000 1640 50  0000 C CNN
+F 2 "" H 4000 1500 50  0001 C CNN
+F 3 "" H 4000 1500 50  0001 C CNN
+	1    4000 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Arduino U?
+U 1 1 5AF83379
+P 7100 3500
+F 0 "U?" H 6200 3050 60  0001 C CNN
+F 1 "Arduino" V 6050 3000 60  0000 C CNN
+F 2 "" H 7100 3500 60  0001 C CNN
+F 3 "" H 7100 3500 60  0001 C CNN
+	1    7100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L FingerPrintControler F?
+U 1 1 5AF87866
+P 7550 2000
+F 0 "F?" H 7000 1150 60  0001 C CNN
+F 1 "FingerPrintControler" V 6850 1200 60  0000 C CNN
+F 2 "" H 6150 1750 60  0001 C CNN
+F 3 "" H 6150 1750 60  0001 C CNN
+	1    7550 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5AF8790A
+P 3800 1500
+F 0 "#PWR?" H 3800 1250 50  0001 C CNN
+F 1 "GND" H 3800 1350 50  0000 C CNN
+F 2 "" H 3800 1500 50  0001 C CNN
+F 3 "" H 3800 1500 50  0001 C CNN
+	1    3800 1500
+	-1   0    0    1   
+$EndComp
+NoConn ~ 5400 2550
+$Comp
+L Motherboard U?
+U 1 1 5AF87BF5
+P 5800 1100
+F 0 "U?" H 5100 1050 60  0001 C CNN
+F 1 "Motherboard" H 4700 1050 60  0000 C CNN
+F 2 "" H 5800 1100 60  0001 C CNN
+F 3 "" H 5800 1100 60  0001 C CNN
+	1    5800 1100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4700 2450
+NoConn ~ 4550 2150
+NoConn ~ 5100 2550
+NoConn ~ 5100 2450
+$Comp
+L SW_SPST SW?
+U 1 1 5AF87E80
+P 4150 4550
+F 0 "SW?" H 4150 4675 50  0000 C CNN
+F 1 "SW_SPST" H 4150 4450 50  0000 C CNN
+F 2 "" H 4150 4550 50  0001 C CNN
+F 3 "" H 4150 4550 50  0001 C CNN
+	1    4150 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R470
+U 1 1 5AF881C4
+P 4600 4550
+F 0 "R470" V 4680 4550 50  0000 C CNN
+F 1 "R" V 4600 4550 50  0000 C CNN
+F 2 "" V 4530 4550 50  0001 C CNN
+F 3 "" H 4600 4550 50  0001 C CNN
+	1    4600 4550
+	0    1    1    0   
+$EndComp
+NoConn ~ 4800 4200
+NoConn ~ 5100 3750
+NoConn ~ 5300 3750
+$Comp
+L LED D?
+U 1 1 5AF8847D
+P 4200 5250
+F 0 "D?" H 4200 5350 50  0000 C CNN
+F 1 "Red LED" H 4200 5150 50  0000 C CNN
+F 2 "" H 4200 5250 50  0001 C CNN
+F 3 "" H 4200 5250 50  0001 C CNN
+	1    4200 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 5AF884BA
+P 4200 5550
+F 0 "D?" H 4200 5650 50  0000 C CNN
+F 1 "Yellow LED" H 4200 5450 50  0000 C CNN
+F 2 "" H 4200 5550 50  0001 C CNN
+F 3 "" H 4200 5550 50  0001 C CNN
+	1    4200 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D?
+U 1 1 5AF884F3
+P 4200 5850
+F 0 "D?" H 4200 5950 50  0000 C CNN
+F 1 "Green LED" H 4200 5750 50  0000 C CNN
+F 2 "" H 4200 5850 50  0001 C CNN
+F 3 "" H 4200 5850 50  0001 C CNN
+	1    4200 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R330
+U 1 1 5AF88C55
+P 3900 5250
+F 0 "R330" V 3980 5250 50  0000 C CNN
+F 1 "R" V 3900 5250 50  0000 C CNN
+F 2 "" V 3830 5250 50  0001 C CNN
+F 3 "" H 3900 5250 50  0001 C CNN
+	1    3900 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R220
+U 1 1 5AF88E2C
+P 3900 5550
+F 0 "R220" V 3980 5550 50  0000 C CNN
+F 1 "R" V 3900 5550 50  0000 C CNN
+F 2 "" V 3830 5550 50  0001 C CNN
+F 3 "" H 3900 5550 50  0001 C CNN
+	1    3900 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L R R220
+U 1 1 5AF88E64
+P 3900 5850
+F 0 "R220" V 3980 5850 50  0000 C CNN
+F 1 "R" V 3900 5850 50  0000 C CNN
+F 2 "" V 3830 5850 50  0001 C CNN
+F 3 "" H 3900 5850 50  0001 C CNN
+	1    3900 5850
+	0    1    1    0   
+$EndComp
+NoConn ~ 7100 1900
+$Comp
+L AdafruitFingerprint U?
+U 1 1 5AF896E5
+P 6800 4700
+F 0 "U?" H 6500 3650 60  0001 C CNN
+F 1 "AdafruitFingerprint" H 5950 3650 60  0000 C CNN
+F 2 "" H 6800 4700 60  0001 C CNN
+F 3 "" H 6800 4700 60  0001 C CNN
+	1    6800 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 4200 6500 4200
+Wire Wire Line
+	7100 1800 7100 4800
+Wire Wire Line
+	6500 1800 7100 1800
+Wire Wire Line
+	6500 2200 6500 1800
+Connection ~ 3750 4550
+Connection ~ 3750 5250
+Connection ~ 3750 5550
+Wire Wire Line
+	3750 2700 3750 5850
+Wire Wire Line
+	4350 4200 5500 4200
+Wire Wire Line
+	4350 2900 4350 4550
+Wire Wire Line
+	3750 4550 3950 4550
+Wire Wire Line
+	4350 5850 5200 5850
+Wire Wire Line
+	5000 4400 5500 4400
+Connection ~ 5400 3750
+Wire Wire Line
+	4350 4550 4450 4550
+Connection ~ 5400 2450
+Wire Wire Line
+	5400 2450 5400 4700
+Connection ~ 5300 2700
+Wire Wire Line
+	3750 2700 5300 2700
+Wire Wire Line
+	5100 4100 5500 4100
+Wire Wire Line
+	5100 2200 5100 4100
+Wire Wire Line
+	5300 2550 5300 5000
+Connection ~ 5100 2200
+Wire Wire Line
+	4850 2200 4850 1950
+Wire Wire Line
+	6250 2200 4850 2200
+Wire Wire Line
+	4550 2450 5500 2450
+Wire Wire Line
+	4550 1950 4550 2450
+Connection ~ 4550 1950
+Wire Wire Line
+	4700 2550 5500 2550
+Connection ~ 4700 2150
+Connection ~ 5300 2550
+Wire Wire Line
+	4700 1950 4700 2550
+Wire Wire Line
+	3800 2150 4700 2150
+Wire Wire Line
+	3800 1500 3800 2150
+Wire Wire Line
+	4000 1950 4550 1950
+Wire Wire Line
+	4000 1500 4000 1950
+Wire Wire Line
+	4800 3750 5500 3750
+Wire Wire Line
+	5300 3850 5500 3850
+Wire Wire Line
+	6600 2200 6600 1900
+Wire Wire Line
+	6600 1900 7200 1900
+Wire Wire Line
+	7200 1900 7200 4900
+Wire Wire Line
+	7200 4300 6500 4300
+Wire Wire Line
+	5300 5000 5850 5000
+Connection ~ 5300 3850
+Wire Wire Line
+	5950 5000 5950 4800
+Wire Wire Line
+	5950 4800 7100 4800
+Connection ~ 7100 4200
+Wire Wire Line
+	6050 5000 6050 4900
+Wire Wire Line
+	6050 4900 7200 4900
+Connection ~ 7200 4300
+NoConn ~ 7100 4300
+Wire Wire Line
+	6150 5000 6150 4700
+Wire Wire Line
+	6150 4700 5400 4700
+NoConn ~ 6150 4800
+NoConn ~ 6150 4900
+NoConn ~ 5400 4500
+NoConn ~ 5400 4400
+NoConn ~ 5400 4300
+NoConn ~ 5400 4200
+NoConn ~ 5400 4100
+NoConn ~ 5300 4100
+NoConn ~ 5300 4200
+NoConn ~ 5300 4300
+NoConn ~ 5300 4400
+NoConn ~ 5300 4500
+NoConn ~ 5400 3850
+Wire Wire Line
+	4350 2900 5500 2900
+Connection ~ 4350 4200
+NoConn ~ 5400 2900
+NoConn ~ 5300 2900
+NoConn ~ 5100 2900
+Wire Wire Line
+	4900 3000 5500 3000
+Wire Wire Line
+	5000 3100 5500 3100
+NoConn ~ 5300 3000
+NoConn ~ 5400 3000
+NoConn ~ 5100 3000
+NoConn ~ 5100 3100
+NoConn ~ 5300 3100
+NoConn ~ 5400 3100
+NoConn ~ 5400 3200
+NoConn ~ 5300 3200
+Wire Wire Line
+	5500 3200 5200 3200
+Wire Wire Line
+	5200 3200 5200 5850
+Wire Wire Line
+	5500 4500 5200 4500
+Connection ~ 5200 4500
+Wire Wire Line
+	5000 5550 4350 5550
+Wire Wire Line
+	5000 3100 5000 5550
+Connection ~ 5000 4400
+Wire Wire Line
+	4800 4550 4800 3750
+Connection ~ 4800 4550
+Wire Wire Line
+	4750 4550 4800 4550
+Wire Wire Line
+	4350 5250 4900 5250
+Wire Wire Line
+	4900 5250 4900 3000
+NoConn ~ 4900 4200
+NoConn ~ 5000 4200
+NoConn ~ 5200 4200
+NoConn ~ 5200 4100
+NoConn ~ 5200 3750
+NoConn ~ 5000 3750
+NoConn ~ 4900 3750
+NoConn ~ 5200 4400
+Wire Wire Line
+	5500 4300 4900 4300
+Connection ~ 4900 4300
+NoConn ~ 5200 4300
+NoConn ~ 5000 4300
+$EndSCHEMATC
